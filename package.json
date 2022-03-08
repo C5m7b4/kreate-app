@@ -1,6 +1,6 @@
 {
   "name": "kreate-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a cli to create apps",
   "main": "src/index.js",
   "bin": {
@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/C5m7b4/kreate-app.git"
   },

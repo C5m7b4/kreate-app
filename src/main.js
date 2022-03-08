@@ -27,7 +27,7 @@ async function initGit(options) {
 async function createGitIgnore(options) {
   const file = fs.createWriteStream(
     path.join(options.targetDirectory, '.gitignore'),
-    { flage: 'a' }
+    { flags: 'a' }
   );
 
   return writeGitIgnore({

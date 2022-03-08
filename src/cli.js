@@ -2,7 +2,7 @@ import arg from 'arg';
 import inquirer from 'inquirer';
 import { createProject } from './main';
 
-function parseArgumentsIntopOptions(rawArgs) {
+function parseArgumentsIntoOptions(rawArgs) {
   const args = arg(
     {
       '--git': Boolean,
@@ -77,7 +77,7 @@ async function promptForMissingOptions(options) {
 }
 
 export async function cli(args) {
-  let options = parseArgumentsIntopOptions(args);
+  let options = parseArgumentsIntoOptions(args);
   options = await promptForMissingOptions(options);
   await createProject(options);
 }
